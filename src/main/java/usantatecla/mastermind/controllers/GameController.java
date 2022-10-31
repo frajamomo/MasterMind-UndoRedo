@@ -14,7 +14,7 @@ public class GameController extends Controller{
         return this.session.getAttemps();
     }
 
-	public void addProposedCombination(ProposedCombination proposedCombination) {
+    public void addProposedCombination(ProposedCombination proposedCombination) {
         this.session.addProposedCombination(proposedCombination);
     }
 
@@ -26,20 +26,15 @@ public class GameController extends Controller{
         return this.session.isLooser();
     }
 
-	public ProposedCombination getProposedCombination(int i) {
+    public ProposedCombination getProposedCombination(int i) {
         return this.session.getProposedCombination(i);
-	}
+    }
 
-	public Result getResult(int i) {
-		return this.session.getResult(i);
-	}
+    public Result getResult(int i) {
+        return this.session.getResult(i);
+    }
 
-	public void continueState() {
+    public void continueState() {
         this.session.next();
-	}
-    
-
-
-
-
+    }
 }

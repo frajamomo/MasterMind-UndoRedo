@@ -14,6 +14,4 @@ public class GameView {
             playController.continueState();
         }
     }
-
-    
 }

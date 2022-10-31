@@ -6,7 +6,6 @@ import java.util.Map;
 import usantatecla.mastermind.models.Session;
 import usantatecla.mastermind.models.StateValue;
 
-
 public class Logic {
     private Session session;
 
@@ -31,12 +30,4 @@ public class Logic {
     public AcceptorController getController() {
         return this.acceptorControllers.get(this.session.getStateValue());
     }
-
-
-    
-    
-
-    
-
-    
 }

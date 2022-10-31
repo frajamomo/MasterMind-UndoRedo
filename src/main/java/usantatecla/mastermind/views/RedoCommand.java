@@ -18,5 +18,4 @@ public class RedoCommand extends Command{
     protected boolean isActive() {
         return this.playController.redoable();
     }
-    
 }

@@ -16,5 +16,4 @@ public class StartController extends AcceptorController{
     public void accept(ControllerVisitor controllerVisitor) {
         controllerVisitor.visit(this);
     }
-    
 }

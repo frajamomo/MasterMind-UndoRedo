@@ -56,16 +56,16 @@ public class Session {
         return this.game.isLooser();
     }
 
-	public void addProposedCombination(ProposedCombination proposedCombination) {
+    public void addProposedCombination(ProposedCombination proposedCombination) {
         this.game.addProposedCombination(proposedCombination);
         this.registry.registry();
-	}
+    }
 
-	public ProposedCombination getProposedCombination(int i) {
-		return this.game.getProposedCombination(i);
-	}
+    public ProposedCombination getProposedCombination(int i) {
+        return this.game.getProposedCombination(i);
+    }
 
-	public Result getResult(int i) {
-		return this.game.getResult(i);
-	}
+    public Result getResult(int i) {
+        return this.game.getResult(i);
+    }
 }

@@ -16,9 +16,8 @@ public class ResumeController extends AcceptorController {
         }
     }
 
-	@Override
-	public void accept(ControllerVisitor controllerVisitor) {
-		controllerVisitor.visit(this);
-	}
-    
+    @Override
+    public void accept(ControllerVisitor controllerVisitor) {
+        controllerVisitor.visit(this);
+    }
 }

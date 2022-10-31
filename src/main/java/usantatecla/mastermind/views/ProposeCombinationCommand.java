@@ -11,27 +11,27 @@ public class ProposeCombinationCommand extends Command {
 
     @Override
     protected void execute() {
-		ProposedCombination proposedCombination = new ProposedCombination();
-		ProposedCombinationView proposedCombinationView = new ProposedCombinationView(proposedCombination);
-		proposedCombinationView.read();
-		
-		playController.addProposedCombination(proposedCombination);
-		
-		MessageView.SEPARATOR.writeln();		
-		MessageView.ATTEMPTS.writeln(playController.getAttempts());		
-		new GameView(playController);
+        ProposedCombination proposedCombination = new ProposedCombination();
+        ProposedCombinationView proposedCombinationView = new ProposedCombinationView(proposedCombination);
+        proposedCombinationView.read();
+        
+        playController.addProposedCombination(proposedCombination);
+        
+        MessageView.SEPARATOR.writeln();		
+        MessageView.ATTEMPTS.writeln(playController.getAttempts());		
+        new GameView(playController);
 
-		new SecretCombinationView().writeln();
+        new SecretCombinationView().writeln();
 
-		if (playController.isWinner()) {
-			MessageView.WINNER.writeln();
-		} else if (playController.isLooser()) {
-			MessageView.LOOSER.writeln();
-		}
-	}        
+        if (playController.isWinner()) {
+            MessageView.WINNER.writeln();
+        } else if (playController.isLooser()) {
+            MessageView.LOOSER.writeln();
+        }
+    }        
 
     @Override
-	protected boolean isActive() {
-		return true;
-	}
+    protected boolean isActive() {
+        return true;
+    }
 }

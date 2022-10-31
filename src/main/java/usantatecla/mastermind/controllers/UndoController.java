@@ -15,8 +15,4 @@ public class UndoController extends Controller {
     boolean undoable() {
         return this.session.undoable();
     }
-
-
 }
-
-    
